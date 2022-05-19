@@ -91,7 +91,7 @@ def removerPeca():
 
 #----------------- MAIN inicio -------------------------
 print ('Bem vindo ao Controle de Estoque da Bicicletaria do Victor Fernandes Campos')
-contador = 3959714                                      # Código da peça baseada no meu RU
+contador = 3959710                                      # Código da peça baseada no meu RU
 listaEstoque = []
 
 while True:
