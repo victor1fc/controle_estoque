@@ -7,8 +7,8 @@ def cadastrarPeca(codigo):
     fab = input('Por favor, entre com o FABRICANTE da peça: ')
     valor = float(input('Por favor, entre com o VALOR(R$) da peça: '))
     estoque = {'código': codigo,                             # Atribui os dados da peça em um dicionario
-               'nome': nome.upper(),                         # grava o nome em maiúsculo para facilitar a identificação
-               'fabricante': fab.upper(),              # grava o fabricante em maiúsculo para facilitar a identificação
+               'nome': nome.upper(),                         # grava o nome e fabricante em maiúsculo para facilitar a identificação
+               'fabricante': fab.upper(),              
                'valor': valor
                }
     listaEstoque.append(estoque.copy())                         # Insere esse dicionário numa lista
@@ -37,7 +37,7 @@ def consultarPeca():
                 print('TODAS as peças cadastradas:')
                 for k in listaEstoque:                      # Navega por cada dicionário dentro da lista
                     for i,j in k.items():                   # Navega por cada chave/valor dentro do dicionário
-                        print('{}: {}'.format(i,j))         # Imprime cada chave e valor (dados da peça)
+                        print('{}: {}'.format(i,j))         
 
             elif op == 2:
                 print('Consultar peças por código selecionado!')
